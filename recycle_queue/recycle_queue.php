@@ -1,0 +1,27 @@
+<?php
+	require_once "/Queue.class.php";
+	$queue = new Queue();
+	$queue->create(6);
+	$queue->add($data = 3);
+	$queue->add($data = 6);
+	$queue->add($data = 4);
+	$queue->travel();
+	$queue->get();
+	$queue->get();
+	$queue->travel();
+	$queue->add($data = 1);
+	$queue->add($data = 2);
+	$queue->add($data = 3);
+	$queue->add($data = 4);
+	$queue->add($data = 5);
+	$queue->add($data = 6);
+	$queue->add($data = 7);
+	$queue->travel();
+		$queue->get();
+	$queue->get();
+		$queue->get();
+	$queue->get();
+		$queue->get();
+	$queue->get();
+		$queue->get();
+	$queue->get();
